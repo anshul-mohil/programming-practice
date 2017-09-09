@@ -1,11 +1,17 @@
 package com.anshul.algo.linkedlist;
 
+
 import java.util.HashSet;
 
 import com.anshul.algo.linkedlist.LinkedList1.Node;
-
+/**
+ *  
+ * @author Explorer
+ *
+ * @param <T>
+ */
 class LinkedList1<T>{
-	
+	//todo: add comment
 	Node<T> head = null;
 	public void add(T value){
 		Node<T> newNode = new Node<T>(value);
