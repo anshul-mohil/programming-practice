@@ -28,19 +28,14 @@ public class DoubleSortedLinkedList {
 	    if(head == null)
 	      return newNode;
 	    
-	    Node curr = head;
 	    // if insertion need to happen at the beginning of the list
-	    if(curr.data >= data){
-	        newNode.next = curr;
-	        curr.prev = newNode;
-	        // TODO: REMOVE not required
-	        newNode.prev = null;
-	        
+	    if(head.data >= data){
+	        newNode.next = head;
+	        head.prev = newNode;
 	        // updating the head to point to new head
-	        head = newNode;
-	        return head;
+	        return newNode;
 	    }
-
+	    Node curr = head;
 	    while(curr.next != null){
 	        // if insert location found
 	        if(curr.data >= data){
@@ -61,10 +56,15 @@ public class DoubleSortedLinkedList {
 public static void main(String[] args) {
 	DoubleSortedLinkedList obj = new DoubleSortedLinkedList();
 	Node newNode = obj.sortedInsert(null, 21);
-	obj.sortedInsert(newNode, 20);
-//	obj.sortedInsert(n, 32);
-//	obj.sortedInsert(n, 19);
-//	obj.sortedInsert(n, 41);
-	
+	newNode = obj.sortedInsert(newNode, 20);
+	newNode = obj.sortedInsert(newNode, 32);
+	newNode = obj.sortedInsert(newNode, 19);
+	newNode = obj.sortedInsert(newNode, 41);
+	newNode = obj.sortedInsert(newNode, 1);
+	System.out.println(" Hello");
+	while(newNode != null) {
+		System.out.println(newNode.data + " -- ");
+		newNode = newNode.next;
+	}
 }
 }
