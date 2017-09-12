@@ -13,6 +13,10 @@ public class AlternateHighLowLinkedList {
 			if (curr.data == nextNode.data) {
 				curr.next = nextNode.next;
 			} else {
+				/**
+				 * just to create merge conflict
+				 */
+				Node temp= new Node(10);
 				curr = curr.next;
 			}
 			nextNode = nextNode.next;
