@@ -12,6 +12,7 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.5.1</version>
         <configuration>
+          <arg>manreet</arg>
           <source>1.7</source>
           <target>1.8</target>
         </configuration>
