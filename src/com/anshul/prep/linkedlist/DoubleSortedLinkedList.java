@@ -54,13 +54,13 @@ public class DoubleSortedLinkedList {
 	    return head;
 	}
 public static void main(String[] args) {
-	DoubleSortedLinkedList obj = new DoubleSortedLinkedList();
-	Node newNode = obj.sortedInsert(null, 21);
-	newNode = obj.sortedInsert(newNode, 20);
-	newNode = obj.sortedInsert(newNode, 32);
-	newNode = obj.sortedInsert(newNode, 19);
-	newNode = obj.sortedInsert(newNode, 41);
-	newNode = obj.sortedInsert(newNode, 1);
+	DoubleSortedLinkedList object = new DoubleSortedLinkedList();
+	Node newNode = object.sortedInsert(null, 21);
+	newNode = object.sortedInsert(newNode, 20);
+	newNode = object.sortedInsert(newNode, 32);
+	newNode = object.sortedInsert(newNode, 19);
+	newNode = object.sortedInsert(newNode, 41);
+	newNode = object.sortedInsert(newNode, 1);
 	System.out.println(" Hello");
 	while(newNode != null) {
 		System.out.println(newNode.data + " -- ");
