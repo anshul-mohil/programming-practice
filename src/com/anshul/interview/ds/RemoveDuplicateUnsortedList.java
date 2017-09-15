@@ -1,7 +1,8 @@
 package com.anshul.interview.ds;
 
-import com.anshul.interview.ds.LinkedList.Node;
-public class AlternateHighLowLinkedList {
+import com.anshul.prep.linkedlist.Node;
+
+public class RemoveDuplicateUnsortedList {
 
 	private void removeDuplicates(Node head) {
 		// TODO Auto-generated method stub
@@ -36,7 +37,7 @@ public class AlternateHighLowLinkedList {
 		System.out.println("List before removal of duplicates");
 		llist.printList();
 		
-		new AlternateHighLowLinkedList().removeDuplicates(llist.head);
+		new RemoveDuplicateUnsortedList().removeDuplicates(llist.head);
 
 		System.out.println("List after removal of elements");
 		llist.printList();

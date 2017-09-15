@@ -1,37 +1,20 @@
 package com.anshul.prep.linkedlist;
-import java.util.Date;
-
 
 public class DoubleSortedLinkedList {
-	 class Node {
-	     int data;
-	     Node next;
-	     Node prev;
-	  }
-	/*
-	  Insert Node at the end of a linked list 
-	  head pointer input could be NULL as well for empty list
-	  Node is defined as 
-	  class Node {
-	     int data;
-	     Node next;
-	     Node prev;
-	  }
-	*/
+
+	
 	// it might have 4 scenarios
 	// 1. head == null
 	// 2. insert at the start (replace head pointer)
 	// 3. insert at the end (after while ends)
 	// 4. insert at the min (common scenario)
 	Node sortedInsert(Node head,int data) {
-		Node newNode =  new Node();
-	    newNode.data = data;
-	    
+		Node newNode =  new Node(data);
 	    if(head == null)
 	      return newNode;
 	    
 	    // if insertion need to happen at the beginning of the list
-	    if(head.data >= data){
+	    if((int)head.data >= (int)data){
 	        newNode.next = head;
 	        head.prev = newNode;
 	        // updating the head to point to new head
@@ -40,7 +23,7 @@ public class DoubleSortedLinkedList {
 	    Node curr = head;
 	    while(curr.next != null){
 	        // if insert location found
-	        if(curr.data >= data){
+	        if((int)curr.data >= (int)data){
 	            newNode.prev = curr.prev;
 	            newNode.next = curr;
 	            curr.prev = newNode;

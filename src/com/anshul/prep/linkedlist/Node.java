@@ -1,11 +1,12 @@
 package com.anshul.prep.linkedlist;
 
-class Node {
+public class Node<T> {
 
-	int data;
-	Node next;
+	public T data;
+	public Node next;
+	public Node prev;
 
-	Node(int data) {
+	public Node(T data) {
 		this.data = data;
 	}
 }

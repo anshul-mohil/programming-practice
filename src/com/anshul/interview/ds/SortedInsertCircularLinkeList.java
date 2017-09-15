@@ -1,6 +1,6 @@
 package com.anshul.interview.ds;
 
-import com.anshul.interview.ds.LinkedList.Node;
+import com.anshul.prep.linkedlist.Node;
 
 public class SortedInsertCircularLinkeList {
 	Node head;
@@ -26,7 +26,7 @@ public class SortedInsertCircularLinkeList {
 		}
 
 		// Case 2 of the above algo
-		else if (current.data >= new_node.data) {
+		else if ((int)current.data >= (int)new_node.data) {
 
 			/*
 			 * If value is smaller than head's value then we need to change next of last
@@ -44,7 +44,7 @@ public class SortedInsertCircularLinkeList {
 		else {
 
 			/* Locate the node before the point of insertion */
-			while (current.next != head && current.next.data < new_node.data)
+			while (current.next != head && (int)current.next.data < (int)new_node.data)
 				current = current.next;
 
 			new_node.next = current.next;
