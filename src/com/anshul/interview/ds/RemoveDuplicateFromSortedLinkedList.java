@@ -1,6 +1,6 @@
 package com.anshul.interview.ds;
 
-import com.anshul.interview.ds.LinkedList.Node;
+import com.anshul.prep.linkedlist.Node;
 
 public class RemoveDuplicateFromSortedLinkedList {
 

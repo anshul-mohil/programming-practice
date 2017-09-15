@@ -1,7 +1,9 @@
 package com.anshul.interview.ds;
 
 import java.util.HashSet;
-import com.anshul.interview.ds.LinkedList.Node;
+
+import com.anshul.prep.linkedlist.Node;
+
 public class RemoveDupsFromUnsortedLinkedList {
 	/**
 	 * Remove duplicate using HashSet on unsorted LinkedList
@@ -11,12 +13,12 @@ public class RemoveDupsFromUnsortedLinkedList {
 			return;
 		HashSet<Integer> hs = new HashSet<Integer>();
 		Node curr = head.next, prev = head;
-		hs.add(prev.data);
+		hs.add((Integer) prev.data);
 		while (curr != null) {
 			if (hs.contains(curr.data)) {
 				prev.next = curr.next;
 			} else {
-				hs.add(curr.data);
+				hs.add((Integer) curr.data);
 				prev = prev.next;
 			}
 			curr = curr.next;
@@ -44,13 +46,13 @@ public class RemoveDupsFromUnsortedLinkedList {
 	
 	   public static void main(String[] args) {
 	        LinkedList list = new LinkedList();
-	        list.head = new Node(10);
-	        list.head.next = new Node(12);
-	        list.head.next.next = new Node(11);
-	        list.head.next.next.next = new Node(11);
-	        list.head.next.next.next.next = new Node(10);
-	        list.head.next.next.next.next.next = new Node(11);
-	        list.head.next.next.next.next.next.next = new Node(10);
+	        list.head = new Node<Integer>(10);
+	        list.head.next = new Node<Integer>(12);
+	        list.head.next.next = new Node<Integer>(11);
+	        list.head.next.next.next = new Node<Integer>(11);
+	        list.head.next.next.next.next = new Node<Integer>(10);
+	        list.head.next.next.next.next.next = new Node<Integer>(11);
+	        list.head.next.next.next.next.next.next = new Node<Integer>(10);
 	 
 	        System.out.println("Linked List before removing duplicates : \n ");
 	        list.printList();
