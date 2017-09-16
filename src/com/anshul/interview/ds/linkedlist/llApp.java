@@ -1,9 +1,9 @@
-package com.anshul.prep.linkedlist;
+package com.anshul.interview.ds.linkedlist;
 
 
 import java.util.HashSet;
 
-import com.anshul.prep.linkedlist.LinkedList1.Node;
+import com.anshul.interview.ds.linkedlist.LinkedList1.Node;
 
 class LinkedList1<T>{
 

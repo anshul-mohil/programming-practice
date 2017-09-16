@@ -1,6 +1,6 @@
-package com.anshul.algo.recurssion;
+package com.anshul.interview.algo.recurssion;
 
-import com.anshul.algo.tree.Node;
+import com.anshul.interview.algo.Node;
 
 public class BinaryTreePathApp {
 

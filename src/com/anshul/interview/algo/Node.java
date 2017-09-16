@@ -1,4 +1,4 @@
-package com.anshul.algo.tree;
+package com.anshul.interview.algo;
 
 //Java program to print all the node to leaf path
 
