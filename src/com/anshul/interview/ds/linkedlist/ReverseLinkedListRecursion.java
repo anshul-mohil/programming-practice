@@ -1,4 +1,4 @@
-package com.anshul.prep.linkedlist;
+package com.anshul.interview.ds.linkedlist;
 
 public class ReverseLinkedListRecursion {
 

@@ -1,6 +1,6 @@
 package com.anshul.interview.ds;
 
-import com.anshul.prep.linkedlist.Node;
+import com.anshul.interview.ds.linkedlist.Node;
 
 public class AlternateHighLowLL {
 
@@ -15,23 +15,21 @@ public class AlternateHighLowLL {
 		while(curr != null) {
 			//stage 1
 			//check low high between prev and curr
-//			if( (Integer.valueOf(prev.data) //< (Integer.valueOf(curr.data) ) {
-//				//do swap
-//				//prev.data;
-//			}
+			if( (int)prev.data < (int)curr.data ) {
+				//do swap
+				int temp = (int) curr.data;
+				curr.data = prev.data;
+				prev.data = temp;
+			}
 			//state 2
 			Node next = curr.next;
 			// compare curr with next and swap if nessary
 			if(next != null) {
 				if((int)curr.data > (int)next.data) {				
-					//swap values and curr and prev pointers
-					Node swap = curr;
-					
-					prev.next = curr.next;
-					curr.next = prev;
-					Node temp =  prev;
-					prev = curr;
-					curr = temp;
+					//swap values
+					int temp = (int) curr.data;
+					curr.data = next.data;
+					next.data = temp;
 				}
 				//increment to the next set of values
 				prev = next;
@@ -49,10 +47,10 @@ public class AlternateHighLowLL {
 	/* Drier program to test above functions */
 	public static void main(String args[]) {
 		LinkedList<Integer> llist = new LinkedList<Integer>();
-		llist.push(4);
-		llist.push(3);
 		llist.push(1);
 		llist.push(2);
+		llist.push(3);
+		llist.push(4);
 		llist.push(5);
 		llist.push(6);
 

@@ -1,4 +1,4 @@
-package com.anshul.algo.recurssion;
+package com.anshul.interview.algo.recurssion;
 
 //towers.java
 //solves Towers of Hanoi puzzle

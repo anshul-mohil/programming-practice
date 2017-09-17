@@ -1,6 +1,6 @@
 package com.anshul.interview.ds;
 
-import com.anshul.prep.linkedlist.Node;
+import com.anshul.interview.ds.linkedlist.Node;
 
 public class LinkedList<T> {
 

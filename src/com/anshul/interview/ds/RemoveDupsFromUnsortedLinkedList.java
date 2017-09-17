@@ -2,7 +2,7 @@ package com.anshul.interview.ds;
 
 import java.util.HashSet;
 
-import com.anshul.prep.linkedlist.Node;
+import com.anshul.interview.ds.linkedlist.Node;
 
 public class RemoveDupsFromUnsortedLinkedList {
 	/**
