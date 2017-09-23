@@ -1,0 +1,16 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.anshul</groupId>
+		<artifactId>coding-practice-parent</artifactId>
+		<version>1.0.0</version>
+		<relativePath>coding-practice-parent</relativePath>
+	</parent>
+
+	<groupId>com.anshul.testing</groupId>
+	<artifactId>DSAlgoTesting</artifactId>
+	<version>0.0.1</version>
+	<name>DSAlgoTesting</name>
+	<packaging>pom</packaging>
+</project>
