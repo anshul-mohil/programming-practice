@@ -8,7 +8,7 @@ public class DoubleSortedLinkedList {
 	// 2. insert at the start (replace head pointer)
 	// 3. insert at the end (after while ends)
 	// 4. insert at the min (common scenario)
-	Node sortedInsert(Node head,int data) {
+	public Node sortedInsert(Node head,int data) {
 		Node newNode =  new Node(data);
 	    if(head == null)
 	      return newNode;
@@ -38,18 +38,4 @@ public class DoubleSortedLinkedList {
 	    newNode.prev = curr;
 	    return head;
 	}
-public static void main(String[] args) {
-	DoubleSortedLinkedList object = new DoubleSortedLinkedList();
-	Node newNode = object.sortedInsert(null, 21);
-	newNode = object.sortedInsert(newNode, 20);
-	newNode = object.sortedInsert(newNode, 32);
-	newNode = object.sortedInsert(newNode, 19);
-	newNode = object.sortedInsert(newNode, 41);
-	newNode = object.sortedInsert(newNode, 1);
-	System.out.println(" Hello");
-	while(newNode != null) {
-		System.out.println(newNode.data + " -- ");
-		newNode = newNode.next;
-	}
-}
 }
