@@ -1,11 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>PracticeDSAlgo</groupId>
-	<artifactId>PracticeDSAlgo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>DSAlgo</name>
-	<description>practicing data structures and algorithm</description>
+
+
+	<groupId>com.anshul</groupId>
+	<artifactId>coding-practice-parent</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>coding-practice-parent</name>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
@@ -28,4 +34,9 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<modules>
+		<module>DSAlgoTesting</module>
+		<module>PracticeDsAlgo</module>
+	</modules>
+
 </project>
