@@ -1,4 +1,4 @@
-package com.anshul.interview.ds.linkedlis;
+package com.anshul.interview.ds.linkedlist;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -6,13 +6,14 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
-import com.anshul.interview.ds.linkedlist.DoubleSortedLinkedList;
-import com.anshul.interview.ds.linkedlist.Node;
+import com.anshul.interview.TestSuites.GoodTestCategory;
 
+@Category({GoodTestCategory.class})
 public class DoubleSortedLinkedListTest {
 	private static DoubleSortedLinkedList object = null;
-	private Node newNode = null;
+	private Node<Integer> newNode = null;
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		object = new DoubleSortedLinkedList();
@@ -33,6 +34,7 @@ public class DoubleSortedLinkedListTest {
 	}
 
 	@Test
+	@Category(GoodTestCategory.class)
 	public void doubleSortedLinkedListPassCase() {
 		passCaseSetup();
 		int[] testData = {1,19,20,21,32,41};
