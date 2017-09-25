@@ -25,8 +25,8 @@
     <plugin>
       <artifactId>maven-surefire-plugin</artifactId>
       <configuration>
-        <groups>com.anshul.interview.TestSuites.GoodTestCategory</groups>
-        <excludedGroups>com.anshul.interview.TestSuites.BadTestCategory</excludedGroups>
+        <groups>com.anshul.interview.TestSuites.GoodTestCategoryTest</groups>
+        <excludedGroups>com.anshul.interview.TestSuites.BadTestCategoryTest</excludedGroups>
       </configuration>
     </plugin>
   </plugins>

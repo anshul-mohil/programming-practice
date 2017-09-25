@@ -9,10 +9,10 @@ import com.anshul.interview.ds.linkedlist.DoubleSortedLinkedListTest;
 import com.anshul.interview.ds.linkedlist.KthNodeFromEndOfListTest;
 
 @RunWith(Categories.class)
-@Categories.IncludeCategory({GoodTestCategory.class})
-@Categories.ExcludeCategory({BadTestCategory.class})
+@Categories.IncludeCategory({GoodTestCategoryTest.class})
+@Categories.ExcludeCategory({BadTestCategoryTest.class})
 @SuiteClasses({ KthNodeFromEndOfListTest.class, DoubleSortedLinkedListTest.class})
-public class PassTestSuiteCategory {
+public class PassTestSuiteCategoryTest {
 
 
 }

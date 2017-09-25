@@ -42,24 +42,3 @@ public class DoubleSortedLinkedList {
 	
 }
 }
-//	// if insert location found
-//				if ((int) curr.data > data) {
-//					newNode.prev = curr.prev;
-//					newNode.next = curr;
-//					curr.prev = newNode;
-//					return head;
-//				}
-//				curr = curr.next;
-//			}
-//			/*
-//			 * Found bug through Junit testing
-//			 */
-//			Node prev = curr;
-//			if((int)curr.data > data) {
-//			
-//			}
-//			else {
-//				//insert at the end
-//				curr.next = newNode;
-//				newNode.prev = curr;
-//			}

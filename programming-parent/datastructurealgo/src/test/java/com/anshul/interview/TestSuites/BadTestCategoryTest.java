@@ -1,5 +1,5 @@
 package com.anshul.interview.TestSuites;
 
-public interface BadTestCategory {
+public interface BadTestCategoryTest {
 
 }

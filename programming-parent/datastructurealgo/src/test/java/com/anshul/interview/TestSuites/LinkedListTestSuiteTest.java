@@ -6,9 +6,9 @@ import org.junit.runners.Suite;
 import com.anshul.interview.ds.linkedlist.DoubleSortedLinkedListTest;
 import com.anshul.interview.ds.linkedlist.KthNodeFromEndOfListTest;
 
-//@RunWith(Suite.class)
-//@Suite.SuiteClasses({ KthNodeFromEndOfListTest.class, DoubleSortedLinkedListTest.class})
-public class LinkedListTestSuite {
+@RunWith(Suite.class)
+@Suite.SuiteClasses({ KthNodeFromEndOfListTest.class, DoubleSortedLinkedListTest.class})
+public class LinkedListTestSuiteTest {
 
 
 }

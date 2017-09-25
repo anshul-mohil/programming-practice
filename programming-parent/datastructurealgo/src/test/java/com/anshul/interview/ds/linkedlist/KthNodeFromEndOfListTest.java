@@ -10,10 +10,10 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
-import com.anshul.interview.TestSuites.BadTestCategory;
-import com.anshul.interview.TestSuites.GoodTestCategory;
+import com.anshul.interview.TestSuites.BadTestCategoryTest;
+import com.anshul.interview.TestSuites.GoodTestCategoryTest;
 
-@Category({GoodTestCategory.class, BadTestCategory.class})
+@Category({GoodTestCategoryTest.class, BadTestCategoryTest.class})
 public class KthNodeFromEndOfListTest {
 	
 	private static final Logger log = Logger.getLogger(KthNodeFromEndOfListTest.class);
@@ -53,7 +53,7 @@ public class KthNodeFromEndOfListTest {
 	}
 
 	@Test
-	@Category(GoodTestCategory.class)
+	@Category(GoodTestCategoryTest.class)
 	public void test() {
 
 		Node<Integer> retreivedNode = testClassObject.kthNodeFromEnd(list1, 3);
@@ -67,7 +67,7 @@ public class KthNodeFromEndOfListTest {
 	}
 	
 	@Test
-	@Category(BadTestCategory.class)
+	@Category(BadTestCategoryTest.class)
 	public void failTest() {
 		Node<Integer> retreivedNode = testClassObject.kthNodeFromEnd(null, 3);
 		if(retreivedNode == null) {
