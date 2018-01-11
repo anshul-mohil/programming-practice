@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.anshul.ds</groupId>
+	<artifactId>datastructure_algo</artifactId>
+	<version>${revision}</version>
+	<name>datastructure_algo</name>
+	<packaging>jar</packaging> 
+	<url>http://maven.apache.org</url>
+	<parent>
+		<groupId>com.anshul</groupId>
+		<artifactId>programming-parent</artifactId>
+		<version>${revision}</version>
+	</parent>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+<dependencies>
+		<dependency>
+			<groupId>com.anshul.test</groupId>
+			<artifactId>test_module</artifactId>
+			<version>${revision}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anshul.test</groupId>
+			<artifactId>test_module</artifactId>
+			<version>${revision}</version>
+			<type>test-jar</type>
+			<scope>test</scope>
+			</dependency>
+
+</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<groups>com.anshul.test.category.GoodTestCategoryTest</groups>
+					<excludedGroups>com.anshul.test.category.BadTestCategoryTest</excludedGroups>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
