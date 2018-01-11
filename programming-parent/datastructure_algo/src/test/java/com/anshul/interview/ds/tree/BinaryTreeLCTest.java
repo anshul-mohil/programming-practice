@@ -89,6 +89,35 @@ public class BinaryTreeLCTest {
 	}
 	@Category(GoodTestCategoryTest.class)
 	@Test
+	public void IsBTSameTest() {
+		System.out.println(" IsBTSameTest running ");
+		List l = IsBTSameTestHelper();
+
+		assertTrue(binaryTreeLC.isBTSame((com.anshul.interview.ds.trees.BinaryTreeLC.Node) l.get(0),
+				(com.anshul.interview.ds.trees.BinaryTreeLC.Node) l.get(1)));
+	}
+	private List<com.anshul.interview.ds.trees.BinaryTreeLC.Node> IsBTSameTestHelper(){
+		List l = new LinkedList();
+		BinaryTreeLC binaryTreeLC = new BinaryTreeLC();
+		binaryTreeLC.root = binaryTreeLC.new Node(1);
+		binaryTreeLC.root.left = binaryTreeLC.new Node(2);
+		binaryTreeLC.root.right = binaryTreeLC.new Node(3);
+		
+		
+		l.add(binaryTreeLC.root);
+		
+		BinaryTreeLC binaryTreeLC2 = new BinaryTreeLC();
+		binaryTreeLC2.root = binaryTreeLC2.new Node(1);
+		binaryTreeLC2.root.left = binaryTreeLC2.new Node(2);
+		binaryTreeLC2.root.right = binaryTreeLC2.new Node(3);
+		binaryTreeLC2.root.right.right = binaryTreeLC2.new Node(3);
+		l.add((binaryTreeLC2.root));
+		
+		return l;
+	}
+	
+	@Category(GoodTestCategoryTest.class)
+	@Test
 	public void Merge2BinaryTreesTest() {
 		System.out.println(" Merge2BinaryTreesTest running ");
 		com.anshul.interview.ds.trees.BinaryTreeLC.Node expected = Merge2BinaryTreesTestHelper(new BinaryTreeLC());

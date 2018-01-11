@@ -1,9 +1,6 @@
-package org.functional_programming;
+package com.anshul.interview.ds.tree;
 
-
-
-import static org.junit.Assert.assertEquals;
-
+import static org.junit.Assert.*;
 
 import java.util.Optional;
 
@@ -13,9 +10,10 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.anshul.lambda.basic.MainComparator;
+import com.anshul.interview.ds.linkedlist.DoubleSortedLinkedList;
 
-public class AppTest {
+public class MannTests {
+	private DoubleSortedLinkedList db = null;
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	
@@ -26,6 +24,10 @@ public class AppTest {
 	
 	}
 
+	@Before
+	public void setUp() throws Exception {
+		db = new DoubleSortedLinkedList();
+	}
 
 	@After
 	public void tearDown() throws Exception {
@@ -33,11 +35,13 @@ public class AppTest {
     
     @Test
     public void givenNonNull_whenCreatesNullable_thenCorrect() {
-       // String name = "baeldung";
-    	 String name = null;
-        Optional<MainComparator> opt = Optional.ofNullable(null);
-        System.out.println(opt.isPresent());
+        String name = "baeldung";
+        Optional<String> opt = Optional.ofNullable(name);
         assertEquals("Optional[baeldung]", opt.toString());
     }
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
 
 }

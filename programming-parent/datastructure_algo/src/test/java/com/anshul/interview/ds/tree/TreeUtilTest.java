@@ -52,7 +52,7 @@ public class TreeUtilTest{
 	@Test
 	public void BinaryTreeTest() {
 		System.out.println("Testing BinaryTree creation");
-		BinaryTree bTree = createCompleteBinaryTree();
+		DiameterOfBT bTree = createCompleteBinaryTree();
 		
 		assertNotNull(bTree);
 		//TODO: NEED TO ADD MORE TEST CASES
@@ -60,13 +60,13 @@ public class TreeUtilTest{
 	@Test
 	public void BinaryTreeHeightAltSolTest(){
 		System.out.println("Testing Binary Tree height with alternative solution");
-		BinaryTree bTree = createCompleteBinaryTree();		
+		DiameterOfBT bTree = createCompleteBinaryTree();		
 		assertEquals(3, bTree.getHeightAlternativeSolution(bTree.root));
 		
 
 		assertEquals(-1, bTree.getHeightAlternativeSolution(null));
 	
-		BinaryTree bTree1Node = create1NodeTree();
+		DiameterOfBT bTree1Node = create1NodeTree();
 		assertEquals(0, bTree.getHeightAlternativeSolution(bTree1Node.root));
 	
 	}
@@ -74,30 +74,31 @@ public class TreeUtilTest{
 	@Test
 	public void BinaryTreeHeightTest() {
 		System.out.println("Testing BinaryTree getHeight method");
-		BinaryTree bTree = createCompleteBinaryTree();		
+		DiameterOfBT bTree = createCompleteBinaryTree();		
 		assertEquals(3, bTree.getBinaryTreeHeight(bTree.root));
 		
 
 		assertEquals(-1, bTree.getBinaryTreeHeight(null));
 	
-		BinaryTree bTree1Node = create1NodeTree();
+		DiameterOfBT bTree1Node = create1NodeTree();
 		assertEquals(0, bTree.getBinaryTreeHeight(bTree1Node.root));
 	}
 	
 	@Test
 	public void BinaryTreeDiameter() {
 		System.out.println("Testing Diameter of Binary Tree");
-		BinaryTree bTree = createCompleteBinaryTree();	
-		BinaryTree.Height h = new BinaryTree().new Height();
+		DiameterOfBT bTree = createCompleteBinaryTree();	
+		DiameterOfBT.Height h = new DiameterOfBT().new Height();
 		h.h = 0;
 		assertEquals(6, bTree.diameterOpt(bTree.root, h));
 	}
-	private BinaryTree create1NodeTree(){
-		BinaryTree bTree = new BinaryTree(10);
+	private DiameterOfBT create1NodeTree(){
+		DiameterOfBT bTree = new DiameterOfBT(10);
 		return bTree;
 	}
-	private static BinaryTree createCompleteBinaryTree() {
-		   BinaryTree tree = new BinaryTree();
+	
+	private static DiameterOfBT createCompleteBinaryTree() {
+		   DiameterOfBT tree = new DiameterOfBT();
 	 
 		   /* following is the tree after above statement
 			 

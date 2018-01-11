@@ -13,22 +13,53 @@ public class MainComparator {
 	
 		
 	public static void main(String... args) {
-		per1 = new Person("Anshul", "Mohil", 40);
-		per2 = new Person("Anukul", "Mohil", 20);
+		per1 = new Person("Anshul", "Mohil", 31);
+		per2 = new Person("Anukul", "Mohil", 29);
 		per3 = new Person("Manpreet", "kaur", 50);
 	//	protoType1();
 		lambdaBasic();
-		lambdaFunction();
+	//	lambdaFunction();
 	}
-
+/**
+ * single statement lambda will return value without explicit return statement.
+ */
 private static void lambdaBasic(){
-	// Write an implementation of an interface and assign it to variable
-	// Below implementations compare 2 different persons based on either ageImp or Namelength implementation
+	
+	/**
+	 * Java 7 style anaonymous class
+	 */
+	Comparator<Person> ageDiff_normal = new Comparator<Person>() {
+		
+		@Override
+		public int compare(Person t1, Person t2) {
+
+			return t1.getAge() - t2.getAge();
+		}
+	};
+
+	// Java 7 calling/passing objects to implementation
+	System.out.println(ageDiff_normal.compare(per1, per2));
+	
+	/**
+	 * java 8 lambda expressions
+	 */
 	Comparator<Person> ageDiff = (p1,p2) -> p1.getAge() - p2.getAge() ;
+
 	Comparator<Person> nameLenDiff = (p1, p2) -> (p1.getFirstName() + p1.getLastName()).length() - (p2.getFirstName() + p2.getLastName()).length();
+	
+	Comparator<Person> nameLenDiff2 = (p1, p2) -> {
+		int l1 = (p1.getFirstName() + p1.getLastName()).length();
+		int l2 = (p2.getFirstName() + p2.getLastName()).length();
+				
+		return l1-l2;
+		};
+	
     
 	// To use this implementation call method on variableImpl and pass parameters.
+	// java 8/ lambda calling/passing objects to implementation
 	System.out.println("Difference between Person 1 and person2 is: " + ageDiff.compare(per1,per2) +" Years");
+	System.out.println("Diff in lenght of Person1 and person2 is :  "+ nameLenDiff.compare(per1, per2) + " Lenght");
+	System.out.println("Diff in lenght with explanatory syntax: " + nameLenDiff2.compare(per1,per2));
 }
 
 private static void lambdaFunction(){
@@ -47,10 +78,12 @@ private static void lambdaFunction(){
 	//Breaking step by step working
 	// step 1: creating a function defines what action to perform. like: passed object.getAge();
 	// step 2: comparing method will use Function class the definition of function method.
-	// step 3: comparing method will return the implementation of compare method.
+	// step 3: comparing method will return the implementation of compare method. ie. Implementation of Functions's return type 'R'
+	//         ie. Comparable's only abstract method.
 	// step 4: very very imp.... So when you call compare(per1,per3) this call will be on the returned Comparator object which has
 	//         compare method implementation in its returned statement. which means calling to compare will be handled by the 
 	//         return statement of comparing.
+														//    (p1, p2) -> f.apply(p1).compareTo(f.apply(p2));
 	System.out.println("Person 1 and Person 3 age diff  " + Comparator.comparing(ageFunc).compare(per1, per3));
     System.out.println("Adding age of Per1 and Per 3 is : " + Comparator.addingAge(ageFunc).compare(per1, per3));
 	
@@ -74,6 +107,8 @@ private static void protoType1(){
 	Function<Person, Integer> f1 = p -> p.getAge();
 	Function<Person, String> f2 = p -> p.getLastName();
 	Function<Person, String> f3 = p -> p.getFirstName();
+	
+
 
 	Comparator<Person> cmpPersonAge = Comparator.comparing(Person::getAge);
 	Comparator<Person> cmpPersonLastName = Comparator.comparing(Person::getLastName);
@@ -84,6 +119,7 @@ private static void protoType1(){
 	Person per2 = new Person("Anukul", "Mohil", 28);
 	Person per3 = new Person("Manpreet", "kaur", 26);
 	
+//	Comparator<Person> cmpPerson_1 = Comparator.comparing_1(Person::getFirstName).compare(per1, per2);
 	// working with function class type Integer only
 //	Comparator<Person> cmpFun1 = Comparator.comparingWithFun(f1);
 //	Comparator<Person> cmpFun2 = Comparator.comparingWithFun( p -> p.getAge());
