@@ -2,14 +2,17 @@ package com.anshul.oo.com.anshul.designpattern.serializable;
 
 import java.io.*;
 
-class Demo implements java.io.Serializable {
+class Demo extends MainDemo implements java.io.Serializable {
   public int a;
   public String b;
-  public Empl empl;
+
+  public transient Empl empl;
   // Default constructor
-  public Demo(int a, String b) {
+  public Demo(int a, String b, Empl empl) {
+   // super(a,b);
     this.a = a;
     this.b = b;
+    this.empl = empl;
   }
 
 }

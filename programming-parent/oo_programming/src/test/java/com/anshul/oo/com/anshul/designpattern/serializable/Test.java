@@ -4,12 +4,9 @@ import java.io.*;
 
 class Test {
 
-  @org.junit.Test
   public static void main(String[] args) {
-    Demo object = new Demo(1, "geeksforgeeks");
+    Demo object = new Demo(1, "geeksforgeeks", new Empl("Anshul", 10));
 
-   // object.empl.setAge(10);
-   // object.empl.setName("anshul");
 
     String filename = "file.ser";
 
@@ -49,6 +46,8 @@ class Test {
       System.out.println("Object has been deserialized ");
       System.out.println("a = " + object1.a);
       System.out.println("b = " + object1.b);
+     // System.out.println(object1.empl);
+     // System.out.println("emp name : " + object1.empl.getName());
     } catch (IOException ex) {
       System.out.println("IOException is caught");
     } catch (ClassNotFoundException ex) {

@@ -26,4 +26,8 @@ public class WeatherData extends Observable {
 	public Float getTemp() {
 		return temp;
 	}
+
+	public static void main(java.lang.String[] args) {
+		System.out.println("Hi");
+	}
 }
