@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.anshul.designpatterns.abstractfactory</OriginalElement>
+  <nodes>
+    <node x="153.0" y="0.0">com.anshul.designpatterns.abstractfactory.Computer</node>
+    <node x="0.0" y="388.0">com.anshul.designpatterns.abstractfactory.ServerAbstractFactory</node>
+    <node x="-30.0" y="123.0">com.anshul.designpatterns.abstractfactory.PC</node>
+    <node x="249.0" y="123.0">com.anshul.designpatterns.abstractfactory.Server</node>
+    <node x="262.0" y="388.0">com.anshul.designpatterns.abstractfactory.PCAbstractFactory</node>
+    <node x="0.0" y="580.0">com.anshul.designpatterns.abstractfactory.EntryPointAbstractFactoryDesingPattern</node>
+    <node x="0.0" y="484.0">com.anshul.designpatterns.abstractfactory.ComputerFactory</node>
+    <node x="131.0" y="287.0">com.anshul.designpatterns.abstractfactory.ComputerAbstractFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.anshul.designpatterns.abstractfactory.PC" target="com.anshul.designpatterns.abstractfactory.Computer">
+      <point x="0.0" y="-59.5" />
+      <point x="114.5" y="98.0" />
+      <point x="198.75" y="98.0" />
+      <point x="-45.75" y="36.5" />
+    </edge>
+    <edge source="com.anshul.designpatterns.abstractfactory.ServerAbstractFactory" target="com.anshul.designpatterns.abstractfactory.ComputerAbstractFactory">
+      <point x="0.0" y="-25.5" />
+      <point x="121.0" y="363.0" />
+      <point x="191.5" y="363.0" />
+      <point x="-60.5" y="25.5" />
+    </edge>
+    <edge source="com.anshul.designpatterns.abstractfactory.Server" target="com.anshul.designpatterns.abstractfactory.Computer">
+      <point x="0.0" y="-59.5" />
+      <point x="374.5" y="98.0" />
+      <point x="290.25" y="98.0" />
+      <point x="45.75" y="36.5" />
+    </edge>
+    <edge source="com.anshul.designpatterns.abstractfactory.PCAbstractFactory" target="com.anshul.designpatterns.abstractfactory.ComputerAbstractFactory">
+      <point x="0.0" y="-25.5" />
+      <point x="383.0" y="363.0" />
+      <point x="312.5" y="363.0" />
+      <point x="60.5" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="252.0" y="315.5" />
+  <SelectedNodes>
+    <node>com.anshul.designpatterns.abstractfactory.PC</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
