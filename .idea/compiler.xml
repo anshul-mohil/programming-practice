@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="datastructurealgo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="datastructure_algo" target="1.8" />
+      <module name="functional_programming" target="1.8" />
+      <module name="oo_programming" target="1.8" />
+      <module name="test_module" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
