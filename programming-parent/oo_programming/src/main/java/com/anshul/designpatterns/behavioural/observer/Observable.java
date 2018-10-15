@@ -1,7 +1,5 @@
-package com.anshul.designpatterns.observer;
+package com.anshul.designpatterns;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Vector;
 /**
  * Anything which has to do with the state has to be syncronized

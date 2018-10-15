@@ -1,0 +1,94 @@
+// package whatever; // don't place package name!
+
+import java.io.*;
+
+interface Message {
+  private String getId();
+  public String getPayload();
+  public MessageType getMessageType();
+
+  //getters & setters
+}
+BinaryMessage implements Message
+TextMessage implements Message
+interface MessageListener<T extends Message>{
+  public void onMessage(List<T> messageList);
+}
+
+class MessageListenerImpl<T extends Message,U> implements MessageListener{
+
+  //Remove duplicate messages based on ID
+
+
+  //OCP
+  <T> public U onMessage(T message){
+  Set<Message> messageSet
+//
+
+  }
+}
+
+//Requirment: if Message is of type XML then persist it
+//if it is JSON then publish it
+
+
+interface MessagePublisher{
+  public void publish(Message msg)
+}
+interface MessagePersistenceSvc{
+  public void persist(Message msg)
+}
+
+interface MessageHandlerChain{
+  public void handler();
+  public Priority getPriority();
+}
+
+class MessageHandlerChainImpl{
+
+
+
+  public void handler(){
+
+  }
+  public Priority getPriority(){
+
+  }
+}
+enum Priority{
+  CRITICAl,MEDIUM,
+}
+
+class MessgePublisherImpl implements MessagePublisher{
+
+  private MessageHandlerChain nextHandler;
+
+  public MessagePublisherImpl(MessageHandlerChain nextHandler){
+    this.nextHandler = handler;
+  }
+
+  public void publish(Message msg){
+    if(msg.getType().equals("JSON"))
+    {
+    //
+    }
+    else{
+      nextHandler.handler(Message msg);
+    }
+  }
+}
+
+// class MessagePublisherHanler implements MessageHandlerChain{
+
+//   private MessegePublisher messagePublisher;
+//   private MessageHandlerChain nextHandler;
+
+//   public MessagePublisherImp(MessageHandlerChain nextHandler, MessegePublisher messagePublisher){
+//     this.handler = nextHandler;
+//     this.messagePublisher = messagePublisher;
+//   }
+
+//   public void handler(){
+//   }
+
+}

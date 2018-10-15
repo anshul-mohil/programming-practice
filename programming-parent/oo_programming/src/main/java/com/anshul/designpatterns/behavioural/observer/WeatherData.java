@@ -1,4 +1,4 @@
-package com.anshul.designpatterns.observer;
+package com.anshul.designpatterns;
 
 public class WeatherData extends Observable {
 
