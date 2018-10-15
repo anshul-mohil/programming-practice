@@ -1,4 +1,4 @@
-package com.anshul.designpatterns.observer;
+package com.anshul.designpatterns;
 
 public class CurrentConditionDisplay implements Observer {
 
