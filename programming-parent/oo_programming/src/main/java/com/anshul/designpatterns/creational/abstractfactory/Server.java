@@ -1,14 +1,13 @@
-package com.anshul.designpatterns.abstractfactory;
+package com.anshul.designpatterns.creational.abstractfactory;
 
-public class PC implements Computer {
-
+public class Server implements Computer {
 
   private int ram;
   private String processor;
   private int hdd;
   private String model;
 
-  public PC(int ram, String processor, int hdd, String model) {
+  public Server(int ram, String processor, int hdd, String model) {
     this.ram = ram;
     this.processor = processor;
     this.hdd = hdd;
@@ -22,11 +21,10 @@ public class PC implements Computer {
 
   @Override
   public String toString() {
-    return "PC{" +
+    return "Server{" +
         "ram=" + ram +
         ", processor='" + processor + '\'' +
         ", hdd=" + hdd +
-        ", model='" + model + '\'' +
         '}';
   }
 

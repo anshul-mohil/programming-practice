@@ -1,4 +1,4 @@
-package com.anshul.designpatterns.builder;
+package com.anshul.designpatterns.creational.builder;
 
 public class EntryPointBuilder {
   public static void main(String[] args) {

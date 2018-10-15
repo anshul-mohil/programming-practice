@@ -1,4 +1,4 @@
-package com.anshul.designpatterns.factory.example.car;
+package com.anshul.designpatterns.creational.factory.example.car;
 
 public class SUV200ToyotaCar extends ToyotaCar {
   public SUV200ToyotaCar(String model, Double price, int wheels, float rpm) {

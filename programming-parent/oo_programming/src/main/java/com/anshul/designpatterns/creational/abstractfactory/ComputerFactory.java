@@ -1,4 +1,4 @@
-package com.anshul.designpatterns.abstractfactory;
+package com.anshul.designpatterns.creational.abstractfactory;
 
 public class ComputerFactory {
 

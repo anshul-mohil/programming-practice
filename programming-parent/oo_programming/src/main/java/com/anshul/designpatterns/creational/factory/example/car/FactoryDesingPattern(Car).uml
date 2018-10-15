@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.anshul.designpatterns.factory.example.car</OriginalElement>
+  <nodes>
+    <node x="365.0" y="244.0">com.anshul.designpatterns.factory.example.car.M22SedanToyotaCar</node>
+    <node x="401.453125" y="0.0">com.anshul.designpatterns.factory.example.car.ToyotaCar</node>
+    <node x="403.5" y="389.0">com.anshul.designpatterns.factory.example.car.ToyotaCarFactory</node>
+    <node x="0.0" y="244.0">com.anshul.designpatterns.factory.example.car.SUV200ToyotaCar</node>
+    <node x="553.0" y="490.0">com.anshul.designpatterns.factory.example.car.ToyotaFactoryUser</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.anshul.designpatterns.factory.example.car.ToyotaCarFactory" target="com.anshul.designpatterns.factory.example.car.SUV200ToyotaCar">
+      <point x="-94.0" y="-25.5" />
+      <point x="450.5" y="364.0" />
+      <point x="172.5" y="364.0" />
+      <point x="0.0" y="47.5" />
+    </edge>
+    <edge source="com.anshul.designpatterns.factory.example.car.SUV200ToyotaCar" target="com.anshul.designpatterns.factory.example.car.ToyotaCar">
+      <point x="-86.25" y="-47.5" />
+      <point x="86.25" y="204.0" />
+      <point x="425.953125" y="204.0" />
+      <point x="-122.5" y="92.0" />
+    </edge>
+    <edge source="com.anshul.designpatterns.factory.example.car.ToyotaFactoryUser" target="com.anshul.designpatterns.factory.example.car.ToyotaCar">
+      <point x="46.0" y="-25.5" />
+      <point x="691.0" y="465.0" />
+      <point x="754.859375" y="465.0" />
+      <point x="754.859375" y="204.0" />
+      <point x="670.953125" y="204.0" />
+      <point x="122.5" y="92.0" />
+    </edge>
+    <edge source="com.anshul.designpatterns.factory.example.car.M22SedanToyotaCar" target="com.anshul.designpatterns.factory.example.car.ToyotaCar">
+      <point x="89.75" y="-47.5" />
+      <point x="634.25" y="224.0" />
+      <point x="572.953125" y="224.0" />
+      <point x="24.5" y="92.0" />
+    </edge>
+    <edge source="com.anshul.designpatterns.factory.example.car.ToyotaFactoryUser" target="com.anshul.designpatterns.factory.example.car.ToyotaCarFactory">
+      <point x="-46.0" y="-25.5" />
+      <point x="599.0" y="465.0" />
+      <point x="544.5" y="465.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.anshul.designpatterns.factory.example.car.ToyotaCarFactory" target="com.anshul.designpatterns.factory.example.car.M22SedanToyotaCar">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="47.5" />
+    </edge>
+    <edge source="com.anshul.designpatterns.factory.example.car.ToyotaCarFactory" target="com.anshul.designpatterns.factory.example.car.ToyotaCar">
+      <point x="94.0" y="-25.5" />
+      <point x="638.5" y="364.0" />
+      <point x="734.5" y="364.0" />
+      <point x="734.5" y="214.0" />
+      <point x="621.953125" y="214.0" />
+      <point x="73.5" y="92.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="377.5" y="270.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

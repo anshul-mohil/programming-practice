@@ -1,4 +1,4 @@
-package com.anshul.designpatterns.factory.example.room;
+package com.anshul.designpatterns.creational.factory.example.room;
 
 public class RoomTajFactoryUser {
 

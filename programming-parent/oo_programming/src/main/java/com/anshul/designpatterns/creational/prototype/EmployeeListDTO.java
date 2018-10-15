@@ -1,4 +1,4 @@
-package com.anshul.designpatterns.prototype;
+package com.anshul.designpatterns.creational.prototype;
 
 import java.util.ArrayList;
 import java.util.List;

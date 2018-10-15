@@ -1,4 +1,4 @@
-package com.anshul.designpatterns.factory.example.car;
+package com.anshul.designpatterns.creational.factory.example.car;
 
 public abstract class ToyotaCar {
   private String model;
