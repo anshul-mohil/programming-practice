@@ -30,5 +30,6 @@ public class MainBuildingStreams {
 
     IntStream streamOfInt = ThreadLocalRandom.current().ints();
     streamOfInt.limit(5).forEach(System.out::println);
+
   }
 }
