@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.anshul.designpatterns.structural.flyweight</OriginalElement>
+  <nodes>
+    <node x="194.65277777777777" y="371.0">com.anshul.designpatterns.structural.flyweight.SoldierClient</node>
+    <node x="188.65277777777777" y="225.0">com.anshul.designpatterns.structural.flyweight.SoldierFactory</node>
+    <node x="0.0" y="101.0">com.anshul.designpatterns.structural.flyweight.SoldierImpl</node>
+    <node x="247.15277777777777" y="539.0">com.anshul.designpatterns.structural.flyweight.EntryPointFlyWeight</node>
+    <node x="161.15277777777777" y="0.0">com.anshul.designpatterns.structural.flyweight.Soldier</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.anshul.designpatterns.structural.flyweight.SoldierFactory" target="com.anshul.designpatterns.structural.flyweight.Soldier">
+      <point x="0.0" y="-48.0" />
+      <point x="281.65277777777777" y="200.0" />
+      <point x="314.5" y="200.0" />
+      <point x="314.5" y="76.0" />
+      <point x="262.77777777777777" y="76.0" />
+      <point x="-33.875" y="25.5" />
+    </edge>
+    <edge source="com.anshul.designpatterns.structural.flyweight.SoldierClient" target="com.anshul.designpatterns.structural.flyweight.Soldier">
+      <point x="63.5" y="-59.0" />
+      <point x="385.15277777777777" y="76.0" />
+      <point x="398.27777777777777" y="76.0" />
+      <point x="101.625" y="25.5" />
+    </edge>
+    <edge source="com.anshul.designpatterns.structural.flyweight.SoldierImpl" target="com.anshul.designpatterns.structural.flyweight.Soldier">
+      <point x="0.0" y="-37.0" />
+      <point x="152.0" y="76.0" />
+      <point x="195.02777777777777" y="76.0" />
+      <point x="-101.625" y="25.5" />
+    </edge>
+    <edge source="com.anshul.designpatterns.structural.flyweight.EntryPointFlyWeight" target="com.anshul.designpatterns.structural.flyweight.SoldierClient">
+      <point x="-46.0" y="-25.5" />
+      <point x="293.15277777777777" y="514.0" />
+      <point x="258.15277777777777" y="514.0" />
+      <point x="-63.5" y="59.0" />
+    </edge>
+    <edge source="com.anshul.designpatterns.structural.flyweight.SoldierFactory" target="com.anshul.designpatterns.structural.flyweight.SoldierImpl">
+      <point x="-62.0" y="-48.0" />
+      <point x="219.65277777777777" y="200.0" />
+      <point x="152.0" y="200.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="com.anshul.designpatterns.structural.flyweight.SoldierClient" target="com.anshul.designpatterns.structural.flyweight.SoldierFactory">
+      <point x="-63.5" y="-59.0" />
+      <point x="258.15277777777777" y="346.0" />
+      <point x="281.65277777777777" y="346.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="224.5" y="295.0" />
+  <SelectedNodes>
+    <node>com.anshul.designpatterns.structural.flyweight.SoldierClient</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
