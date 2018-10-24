@@ -2,18 +2,18 @@ package com.anshul.designpatterns.creational.factory.example.car;
 
 public class ToyotaCarFactory {
 
-  public static ToyotaCar getToyotaCarOf(String carType) {
-    carType = carType.toLowerCase();
+  public static ToyotaCar getToyotaCarOf(CarType carType) {
     ToyotaCar car = null;
     switch (carType) {
-      case "suv200toyotacar":
+      case SUV200TOYOTACAR:
         car = new SUV200ToyotaCar();
-
-      case "m22sedantoyotacar":
+        break;
+      case M22SEDANTOYOTACAR:
         car = new M22SedanToyotaCar();
         break;
       default:
     }
     return car;
   }
+
 }
