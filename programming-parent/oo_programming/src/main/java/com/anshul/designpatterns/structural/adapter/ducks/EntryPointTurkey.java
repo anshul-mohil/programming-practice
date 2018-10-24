@@ -1,6 +1,6 @@
 package com.anshul.designpatterns.structural.adapter.ducks;
 
-public class TurkeyTestDrive {
+public class EntryPointTurkey {
   public static void main(String[] args) {
     MallardDuck duck = new MallardDuck();
     Turkey duckAdapter = new DuckAdapter(duck);
