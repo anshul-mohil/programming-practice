@@ -3,32 +3,40 @@ package com.anshul.designpatterns.creational.prototype;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployeeListDTO implements Cloneable {
-  private List<String> list;
+public class EmployeeListDTO<T> implements Cloneable {
+  private List<T> list;
 
   public EmployeeListDTO(List list) {
     this.list = list;
   }
 
-  public List<String> getList() {
-    return list;
+  public boolean add(T object) {
+    return list.add(object);
   }
-
+  
   @Override
-  protected EmployeeListDTO clone() throws CloneNotSupportedException {
+  public EmployeeListDTO clone() throws CloneNotSupportedException {
 
-    List<String> temp = new ArrayList<>();
-    for (String value : list) {
+    List<T> temp = new ArrayList<>();
+    for (T value : list) {
       temp.add(value);
     }
 
     return new EmployeeListDTO(temp);
   }
 
-  public void loadDataFromDB() {
-    list.add("Anshul");
-    list.add("Mohil");
-    list.add("Anukul");
-    list.add("Mohil");
+  public T remove(int i) {
+    return list.remove(i);
+  }
+
+  public boolean remove(T object) {
+    return list.remove(object);
+  }
+
+  @Override
+  public String toString() {
+    return "EmployeeListDTO{" +
+        "list=" + list.toString() +
+        '}';
   }
 }

@@ -1,35 +1,44 @@
 package com.anshul.designpatterns.creational.prototype;
 
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Prototype is used when object creation is
  * expensive and we clone objects for reuse.
  */
 public class EntryPointPrototype {
-
-
   public static void main(String[] args) throws CloneNotSupportedException {
-    EmployeeListDTO employeeListDTO_00 = new EmployeeListDTO(new LinkedList());
-    employeeListDTO_00.loadDataFromDB();
+    EntryPointPrototype entryPointPrototype = new EntryPointPrototype();
+    EmployeeListDTO<String> employeeListDTO_00 = new EmployeeListDTO(new LinkedList());
+    employeeListDTO_00 = entryPointPrototype.loadDataFromDB(employeeListDTO_00);
 
     EmployeeListDTO employeeListDTO_01 = employeeListDTO_00.clone();
     EmployeeListDTO employeeListDTO_02 = employeeListDTO_00.clone();
 
-    List list00 = employeeListDTO_00.getList();
+    employeeListDTO_00.remove(0);
+    employeeListDTO_00.remove(1);
 
-    list00.remove(0);
-
-    List list01 = employeeListDTO_01.getList();
-    list01.add("Manpreet");
-
-
-    System.out.println(list00);
-    System.out.println(list01);
-    System.out.println(employeeListDTO_02.getList());
+    employeeListDTO_01.add("Manpreet");
+    employeeListDTO_01.add("Kaur");
 
 
+    // Data removed object
+    System.out.println(employeeListDTO_00);
+
+    // data added object
+    System.out.println(employeeListDTO_01);
+
+    //constant data as per returned from db load
+    System.out.println(employeeListDTO_02);
+  }
+
+  public <T> EmployeeListDTO<T> loadDataFromDB(EmployeeListDTO<T> employeeListDTO) {
+
+    employeeListDTO.add((T) "Anshul");
+    employeeListDTO.add((T) "Mohil");
+    employeeListDTO.add((T) "Anukul");
+    employeeListDTO.add((T) "Mohil");
+    return employeeListDTO;
   }
 
 }
