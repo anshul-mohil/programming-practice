@@ -15,7 +15,7 @@ public class EmployeeListDTO<T> implements Cloneable {
   }
   
   @Override
-  public EmployeeListDTO clone() throws CloneNotSupportedException {
+  public EmployeeListDTO clone() {
 
     List<T> temp = new ArrayList<>();
     for (T value : list) {

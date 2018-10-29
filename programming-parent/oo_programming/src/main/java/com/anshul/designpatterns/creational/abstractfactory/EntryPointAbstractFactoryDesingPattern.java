@@ -12,6 +12,5 @@ public class EntryPointAbstractFactoryDesingPattern {
 
     System.out.println(computer.getConfigurations());
 
-
   }
 }

@@ -2,7 +2,7 @@ package com.anshul.designpatterns.creational.builder;
 
 public class EntryPointBuilder {
   public static void main(String[] args) {
-    //elegent way to use builder pattern is as following
+    //elegant way to use builder pattern is as following
     Computer computerFinal = new Computer.ComputerBuilder(16, "sony vaio", "intel i5").setHdd("500gb").setBluetooth(true).build();
     System.out.println("Computer : " + computerFinal);
   }

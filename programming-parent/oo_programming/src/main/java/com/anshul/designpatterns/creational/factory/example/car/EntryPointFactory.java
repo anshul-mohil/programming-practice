@@ -9,6 +9,5 @@ public class EntryPointFactory {
     suv200ToyotaCar.setWheels(4);
     System.out.println(suv200ToyotaCar.getRpm());
     System.out.println(suv200ToyotaCar.getWheels());
-
   }
 }

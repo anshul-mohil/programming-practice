@@ -8,12 +8,19 @@ public class Computer {
   private String processor;
   private String hdd;
 
-
-  public Computer(ComputerBuilder computerBuilder) {
+  /**
+   * No direct access to constructor.
+   *
+   * @param computerBuilder used by inner class
+   *                        builder to create
+   *                        object at final stage.
+   */
+  private Computer(ComputerBuilder computerBuilder) {
     this.RAM = computerBuilder.RAM;
     this.bluetooth = computerBuilder.bluetooth;
     this.hdd = computerBuilder.hdd;
     this.processor = computerBuilder.processor;
+    this.model = computerBuilder.model;
   }
 
   public int getRAM() {
