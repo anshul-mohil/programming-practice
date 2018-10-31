@@ -4,7 +4,7 @@ import com.anshul.interview.ds.linkedlist.Node;
 
 public class LinkedList<T> {
 
-	public static Node head;
+  public Node head;
 
 	// A simple and tail recursive function to reverse
 	// a linked list. prev is passed as NULL initially.
@@ -62,6 +62,7 @@ public class LinkedList<T> {
 		System.out.println();
 	}
 //usage of linkedlist
+
 	public static void main(String[] args) {
 		LinkedList list = new LinkedList();
 		list.head = new Node<Integer>(1);
@@ -76,7 +77,7 @@ public class LinkedList<T> {
 		System.out.println("Original Linked list ");
 		list.printList();
 		// Node res = list.reverseUtil(head, null);
-		list.reverseUtil(head, null);
+      list.reverseUtil(new LinkedList<String>().head, null);
 		System.out.println("");
 		System.out.println("");
 		System.out.println("Reversed linked list ");

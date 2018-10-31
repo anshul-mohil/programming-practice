@@ -4,6 +4,13 @@ import com.anshul.interview.ds.linkedlist.Node;
 
 public class RemoveDuplicateUnsortedList {
 
+  private RemoveDuplicateUnsortedList() {
+  }
+
+  public static RemoveDuplicateUnsortedList createRemoveDuplicateUnsortedList() {
+    return new RemoveDuplicateUnsortedList();
+  }
+
 	private void removeDuplicates(Node head) {
 		// TODO Auto-generated method stub
 		if (head == null)
@@ -14,10 +21,6 @@ public class RemoveDuplicateUnsortedList {
 			if (curr.data == nextNode.data) {
 				curr.next = nextNode.next;
 			} else {
-				/**
-				 * just to create merge conflict
-				 */
-				Node temp= new Node(10);
 				curr = curr.next;
 			}
 			nextNode = nextNode.next;
@@ -36,8 +39,8 @@ public class RemoveDuplicateUnsortedList {
 
 		System.out.println("List before removal of duplicates");
 		llist.printList();
-		
-		new RemoveDuplicateUnsortedList().removeDuplicates(llist.head);
+
+      createRemoveDuplicateUnsortedList().removeDuplicates(llist.head);
 
 		System.out.println("List after removal of elements");
 		llist.printList();
