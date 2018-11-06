@@ -1,5 +1,8 @@
 package com.anshul.designpatterns.structural.adapter.ducks;
 
+import java.io.BufferedReader;
+import java.nio.Buffer;
+
 public class TurkeyAdapter implements Duck {
   Turkey turkey;
 

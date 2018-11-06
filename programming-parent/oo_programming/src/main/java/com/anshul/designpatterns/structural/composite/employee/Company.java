@@ -11,7 +11,7 @@ import java.util.List;
 
 // A common interface for all employee
 interface Employee {
-  public void showEmployeeDetails();
+  void showEmployeeDetails();
 }
 
 class Developer implements Employee {

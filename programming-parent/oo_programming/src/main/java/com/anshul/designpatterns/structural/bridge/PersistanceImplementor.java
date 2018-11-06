@@ -2,9 +2,9 @@ package com.anshul.designpatterns.structural.bridge;
 
 interface PersistanceImplementor {
 
-  public long saveObject(Object object);
+  long saveObject(Object object);
 
-  public void deleteObject(long objectId);
+  void deleteObject(long objectId);
 
-  public Object getObject(long objectId);
+  Object getObject(long objectId);
 }

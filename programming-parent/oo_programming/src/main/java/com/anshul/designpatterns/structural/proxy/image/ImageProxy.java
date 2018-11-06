@@ -1,5 +1,10 @@
-package com.anshul.designpatterns.structural.proxy;
+package com.anshul.designpatterns.structural.proxy.image;
 
+/**
+ * Generally Proxy would take some information
+ * which help proxy to define what course of
+ * action should be taken.
+ */
 public class ImageProxy implements ImageViewer {
 
   private final String filePath;

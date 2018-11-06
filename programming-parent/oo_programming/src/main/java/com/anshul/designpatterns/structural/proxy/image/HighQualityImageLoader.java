@@ -1,4 +1,4 @@
-package com.anshul.designpatterns.structural.proxy;
+package com.anshul.designpatterns.structural.proxy.image;
 
 /**
  * Since creating object is expensive, we can lazy load

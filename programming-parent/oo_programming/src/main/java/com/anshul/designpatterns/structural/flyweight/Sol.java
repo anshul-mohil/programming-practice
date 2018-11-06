@@ -16,6 +16,6 @@ interface Soldier {
    * @param newLocationX
    * @param newLocationY
    */
-  public void moveSoldier(int previousLocationX,
-                          int previousLocationY, int newLocationX, int newLocationY);
+  void moveSoldier(int previousLocationX,
+                   int previousLocationY, int newLocationX, int newLocationY);
 }
